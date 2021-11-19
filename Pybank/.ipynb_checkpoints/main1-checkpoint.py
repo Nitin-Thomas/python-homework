@@ -2,7 +2,7 @@
  "cells": [
   {
    "cell_type": "code",
-   "execution_count": 6,
+   "execution_count": 41,
    "id": "a566d380-5a25-4ec2-b7f2-52f38f7b1d5a",
    "metadata": {},
    "outputs": [
@@ -14,7 +14,7 @@
       "----------------------------\n",
       "Total Months:  86\n",
       "Total: $ 38382578\n",
-      "Average Change: $ -2315.12\n",
+      "Average Change: $ 539138.05\n",
       "Greatest Increase in Profits:  Feb-2012 $ 1926159\n",
       "Greatest Decrease in Profits:  Sep-2013 $ -2196167\n"
      ]
@@ -48,7 +48,7 @@
     "        monthly_diff = diff_spot - diff_lag\n",
     "        if monthly_diff == diff_spot:\n",
     "            monthly_diff = 0\n",
-    "        monthly_diff_total += monthly_diff\n",
+    "        monthly_diff_total += daily_diff\n",
     "        \n",
     "        diff_lag = diff_spot\n",
     "        \n",
