@@ -84,10 +84,10 @@ avg_change = round(monthly_diff_total / (month_num - 1), 2)
 print("Financial Analysis")
 print("----------------------------")
 print("Total Months: " + str(month_num))
-print("Total: $" + '{:,.2f}'.format(pl_total))
-print("Average Change: " + '${:,.2f}'.format(avg_change))
-print("Greatest Increase in Profits: " + str(record_max[0]) + " - " + str('${:,.2f}'.format(g_profit)))
-print("Greatest Decrease in Profits: " + str(record_min[0]) + " - " + str('${:,.2f}'.format(g_loss)))
+print("Total: $" + str('{:,.2f}'.format(pl_total)))
+print("Average Change: " + str('${:,.2f}'.format(avg_change)))
+# print(f"Greatest Increase in Profits: ", record_max[0],"-", '${:,.2f}'.format(g_profit))
+# print(f"Greatest Decrease in Profits: ", record_min[0],"-",'${:,.2f}'.format(g_loss))
 
 #Your final script should print the analysis to the terminal and export a text file with the results.
 
@@ -100,3 +100,6 @@ f.write ("\nAverage P&L change: $" + str(avg_change))
 f.write ("\nGreatest Increase in Profits: " + str(record_max[0])+ " $ " + str(g_profit))
 f.write ("\nGreatest loss on record: " + str(record_min[0]) + " $ " + str(g_loss))
 f.close()
+
+
+      
