@@ -75,7 +75,7 @@ avg_change = round(monthly_diff_total / (month_num - 1), 2)
 #print statements for output    
 print("Financial Analysis")
 print("----------------------------")
-print(f"Total Months: {month_num}")
+print(f"Total Months: ", month_num)
 print(f"Total: $",'{:,.2f}'.format(pl_total))
 print(f"Average Change: ", '${:,.2f}'.format(avg_change))
 print(f"Greatest Increase in Profits: ", record_max[0],"-", '${:,.2f}'.format(g_profit))
